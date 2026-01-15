@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: mail spam-classifier-app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app  # Permet d'avoir un reload en direct du code
+    environment:
+      - PYTHONUNBUFFERED=1
