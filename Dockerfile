@@ -16,5 +16,8 @@ COPY . .
 # Exposer le port sur lequel ton API va tourner
 EXPOSE 8000
 
+# Ajouter le répertoire courant au PYTHONPATH
+ENV PYTHONPATH=/app
+
 # Commande par défaut pour lancer ton API
-CMD ["python", "api/main.py"]
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
