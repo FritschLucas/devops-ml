@@ -1,3 +1,13 @@
+---
+title: Devops Ml
+emoji: 🚀
+colorFrom: purple
+colorTo: blue
+sdk: docker
+pinned: false
+app_port: 8000
+---
+
 # devops-ml
 
 ## télécharger les dépendances
@@ -16,4 +26,8 @@ uvicorn api.main:app --reload
 ```
 http://127.0.0.1:8000/docs
 ```
+
+
+
+
 
