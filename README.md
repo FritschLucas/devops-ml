@@ -27,6 +27,15 @@ uvicorn api.main:app --reload
 http://127.0.0.1:8000/docs
 ```
 
+## déploiment
+Le backend a été déployé sur Huggingface space à l'adresse suivante
+```
+https://matyschampeyrol-devops-ml.hf.space
+
+#pour acceder au swagger et tester l'api de classification de mail
+https://matyschampeyrol-devops-ml.hf.space/docs
+```
+
 
 
 
